@@ -1,6 +1,6 @@
 # Miguel Joshua A. Bermejo — Portfolio
 
-A responsive personal portfolio built with React, TypeScript, and Vite. A charcoal and mint visual system, custom animated SVG artwork, and an illustrative clinic dashboard frame Miguel's education, skills, and ImmaCare+ capstone.
+A responsive personal portfolio built with React, TypeScript, and Vite. A charcoal and mint visual system and custom animated SVG artwork frame Miguel's education, skills, and ImmaCare+ capstone.
 
 ## Local development
 
@@ -22,7 +22,7 @@ The production build is generated in `dist/`. Deploy that directory to a static 
 ## Features
 
 - Responsive desktop, tablet, and mobile layouts with a collapsible navigation menu.
-- Custom SVG orbital monogram and CSS-drawn desktop/mobile clinic interface.
+- Custom SVG orbital monogram and a focused, text-based capstone presentation.
 - ImmaCare+ overview in a native modal dialog, including Escape dismissal and browser-managed focus.
 - Technical skill filters: all skills, software, and infrastructure.
 - Interactive SDLC phases with arrow-key, Home, and End navigation.
@@ -36,10 +36,10 @@ Edit biography, education, project information, profile text, and contact conten
 
 Fonts are requested from Google Fonts; browser sans-serif fallbacks keep the site usable if that request fails. All illustrations are rendered locally with SVG and CSS.
 
-The ImmaCare+ interface is clearly labeled as an illustrative concept using sample data. It is not a real capstone screenshot. No unverified technical stack, performance metrics, live demo, repository, or contact address has been invented. The profile download is a `.txt` file, not a PDF resume.
+No unverified technical stack, performance metrics, live demo, repository, or contact address has been invented. The profile download is a `.txt` file, not a PDF resume.
 
 ## Before publishing
 
-Add Miguel's preferred contact email and verified professional links, and optionally replace the illustrative interface with authentic project screenshots. Update education dates when appropriate. Review desktop and mobile layouts in a browser before publishing.
+Add Miguel's preferred contact email and verified professional links when available. Update education dates when appropriate. Review desktop and mobile layouts in a browser before publishing.
 
 See [the SDLC record](docs/SDLC.md) for requirements, implementation decisions, verification status, and maintenance notes.

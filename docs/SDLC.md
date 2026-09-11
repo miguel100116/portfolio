@@ -32,7 +32,7 @@ Completed on September 10, 2026:
 - `npm run lint`: passed Oxlint.
 - Local development server: running; HTTP response verified as 200.
 - Source audit: starter content and placeholder `href="#"` links are absent from active source.
-- Content review: the clinic mockup is labeled illustrative, supplied education dates are preserved, and unprovided contact links are not fabricated.
+- Content review: the capstone is presented through supplied text only, education dates are preserved, and unprovided contact links are not fabricated.
 
 Environment limitation: the connected browser reported that no browser was available. Visual inspection and browser interaction tests have not been completed. The following checks remain for a browser-capable environment:
 
@@ -48,4 +48,4 @@ Environment limitation: the connected browser reported that no browser was avail
 
 Deployment is not performed. Run `npm run build` and publish `dist/` to the chosen static host when ready. No service subscription is needed to run locally.
 
-Contact email and verified professional links are still needed to enable direct contact. Add authentic ImmaCare+ screenshots, project links, or implementation details only when supplied. Keep education status, profile text, and skills current. Repeat the relevant build and browser checks after changes.
+Contact email and verified professional links are still needed to enable direct contact. Add project links or implementation details only when supplied. Keep education status, profile text, and skills current. Repeat the relevant build and browser checks after changes.
