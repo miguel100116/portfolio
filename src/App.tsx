@@ -22,12 +22,12 @@ function Orbit() {
   return <div className="orbit-art" aria-label="Abstract orbital illustration representing connected technology" role="img">
     <div className="art-grid" /><div className="orbit-coordinate top-coordinate">SYSTEM / MJ.01</div>
     <svg className="orbital-svg" viewBox="0 0 560 530" fill="none" aria-hidden="true">
-      <defs><radialGradient id="sphere"><stop stopColor="#233f3a" /><stop offset=".7" stopColor="#102724" /><stop offset="1" stopColor="#0b1718" /></radialGradient><linearGradient id="ring"><stop stopColor="#84edc2" stopOpacity=".12" /><stop offset=".5" stopColor="#9ef8d1" /><stop offset="1" stopColor="#84edc2" stopOpacity=".15" /></linearGradient></defs>
-      <circle cx="280" cy="260" r="185" stroke="#243331" strokeDasharray="3 7" /><circle cx="280" cy="260" r="132" fill="url(#sphere)" stroke="#3d6659" strokeWidth=".7" />
-      <g stroke="#63937c" strokeOpacity=".28"><ellipse cx="280" cy="260" rx="65" ry="132" /><ellipse cx="280" cy="260" rx="112" ry="132" /><ellipse cx="280" cy="260" rx="132" ry="43" /><ellipse cx="280" cy="260" rx="123" ry="92" /><path d="M148 260h264M280 128v264" /></g>
-      <g className="orbit-rings"><ellipse cx="280" cy="260" rx="228" ry="80" transform="rotate(-33 280 260)" stroke="url(#ring)" /><ellipse cx="280" cy="260" rx="205" ry="79" transform="rotate(49 280 260)" stroke="url(#ring)" strokeOpacity=".5" /><circle cx="95" cy="368" r="6" fill="#a0f1cc" /><circle cx="458" cy="151" r="4" fill="#a0f1cc" /></g>
-      <path d="m228 279 15-49 37 34 37-34 15 49" stroke="#befcde" strokeWidth="7" strokeLinejoin="round" strokeLinecap="round" /><path d="M338 244v28c0 17-10 24-23 19" stroke="#befcde" strokeWidth="7" strokeLinecap="round" />
-      <circle cx="280" cy="260" r="224" stroke="#293733" strokeDasharray="1 19" /><path d="M46 260h18m-9-9v18m437-9h18m-9-9v18" stroke="#60796b" />
+      <defs><radialGradient id="sphere"><stop stopColor="#5b3a19" /><stop offset=".7" stopColor="#26190d" /><stop offset="1" stopColor="#100c08" /></radialGradient><linearGradient id="ring"><stop stopColor="#f0a84d" stopOpacity=".12" /><stop offset=".5" stopColor="#ffd38a" /><stop offset="1" stopColor="#f0a84d" stopOpacity=".15" /></linearGradient></defs>
+      <circle cx="280" cy="260" r="185" stroke="#3d3021" strokeDasharray="3 7" /><circle cx="280" cy="260" r="132" fill="url(#sphere)" stroke="#76532e" strokeWidth=".7" />
+      <g stroke="#b47c3e" strokeOpacity=".28"><ellipse cx="280" cy="260" rx="65" ry="132" /><ellipse cx="280" cy="260" rx="112" ry="132" /><ellipse cx="280" cy="260" rx="132" ry="43" /><ellipse cx="280" cy="260" rx="123" ry="92" /><path d="M148 260h264M280 128v264" /></g>
+      <g className="orbit-rings"><ellipse cx="280" cy="260" rx="228" ry="80" transform="rotate(-33 280 260)" stroke="url(#ring)" /><ellipse cx="280" cy="260" rx="205" ry="79" transform="rotate(49 280 260)" stroke="url(#ring)" strokeOpacity=".5" /><circle cx="95" cy="368" r="6" fill="#ffd38a" /><circle cx="458" cy="151" r="4" fill="#ffd38a" /></g>
+      <path d="m228 279 15-49 37 34 37-34 15 49" stroke="#ffe1ae" strokeWidth="7" strokeLinejoin="round" strokeLinecap="round" /><path d="M338 244v28c0 17-10 24-23 19" stroke="#ffe1ae" strokeWidth="7" strokeLinecap="round" />
+      <circle cx="280" cy="260" r="224" stroke="#3b3023" strokeDasharray="1 19" /><path d="M46 260h18m-9-9v18m437-9h18m-9-9v18" stroke="#8d704b" />
     </svg>
     <div className="floating-tag tag-code"><span className="tag-icon">&lt;/&gt;</span><div>Build with purpose<small>Mobile & web development</small></div><span className="tiny-dot" /></div>
     <div className="floating-tag tag-learn"><span className="spark">✳</span><div>Always in progress<small>Learning is part of the process.</small></div></div>
@@ -85,6 +85,7 @@ function App() {
   }
   return <>
     <div className="page-progress" aria-hidden="true" />
+    <div className="ambient-bg" aria-hidden="true"><span className="ambient-one" /><span className="ambient-two" /><span className="ambient-three" /></div>
     <div className="pointer-glow" aria-hidden="true" />
     <a className="skip-link" href="#main">Skip to content</a>
     <header className="site-header"><div className="header-inner"><a className="wordmark" href="#home" aria-label="Miguel Bermejo home">mj<span>.</span><span className="wordmark-divider" /><span className="wordmark-name">MIGUEL BERMEJO</span></a><button className="menu-toggle" aria-expanded={menuOpen} aria-controls="main-navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? 'Close' : 'Menu'} <span>{menuOpen ? '−' : '+'}</span></button><nav id="main-navigation" className={menuOpen ? 'nav-open' : ''} aria-label="Main navigation">{[['home', 'Home'], ['profile', 'Profile'], ['work', 'Work'], ['skills', 'Skills'], ['process', 'Process']].map(([id, label]) => <a key={id} className={activeSection === id ? 'active' : ''} aria-current={activeSection === id ? 'location' : undefined} href={`#${id}`} onClick={() => setMenuOpen(false)}>{label}</a>)}<a className="nav-contact" href="#contact" onClick={() => setMenuOpen(false)}>Let’s connect <Arrow diagonal /></a></nav></div></header>
